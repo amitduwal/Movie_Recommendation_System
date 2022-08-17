@@ -1,23 +1,24 @@
-# Face Mask Detection
+# Movie Recommendation System
 
-## YOLO v3 Mask Detection
+## Movie Recommendation using clustering
 
-This is a small project on mask detection using yolo_v3. This project was carried out by scraping the photos of people wearing mask in the internet and those photos were labeled using labelImg and a yolo_v3 model was trained on google colab.
+This is a small project on Movie Recommendation System using K Means Clustering. This project was carried out by scraping the top movies of various genres in the IMDB official site. Using the genres as properties these movies were clustered.
 
 ## About scripts
 
-- [x] yoloV3_Trainning.ipynb to load darknet and train on data on collab and store model in google drive.
+- [x] scraper.py to scrape imdb website
 
+- [x] main.py to run the code in order (No need to run pre_processing.py and clustering_code.py they are imported by main and run automatically)
 
+- [x] pre_processing.py to preprocess the scraped data and store in desired format
 
+- [x] clustering_code.py to prepare data and fit to kmeans clustering model from sklearn
 
-- [x] test_on_video.py to test on current input video stream to the pc.
-
-- [x] plot.py to plot the loss graph
+- [x] plot.py to plot the cluster graph
 
 ### Plot can be seen here
 
-![plot](./training_loss_plot.png)
+![plot](./clustering_plot.png)
 
 ### Output can be seen here
 
