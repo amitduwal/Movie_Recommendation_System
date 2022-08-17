@@ -1,6 +1,9 @@
 import clustering_code
 import os
 
+import warnings
+warnings.filterwarnings("ignore")
+
 def clean_t_dataset():
     try:
         os.remove('Dataset_to_plot.csv')
