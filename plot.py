@@ -13,8 +13,8 @@ def data_plot(data):
     ax.set_ylabel("S_Genre")
     ax.set_zlabel("T_Genre")
     
-    
-    plt.show()
+    fig.savefig('clustering_plot.png', dpi=1000)
+    # plt.show()
 
 df = pd.read_csv("Dataset_to_plot.csv")
 
